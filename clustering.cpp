@@ -136,7 +136,7 @@ int main() {
 
     pcl::PointCloud<pcl::PointXYZI>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZI>);
 
-    if (pcl::io::loadPCDFile<pcl::PointXYZI> ("/home/sandeep/Clustering/cloud.pcd", *cloud) == -1)
+    if (pcl::io::loadPCDFile<pcl::PointXYZI> ("../cloud.pcd", *cloud) == -1)
     {
         PCL_ERROR ("Couldn't read file cloud.pcd \n");
         return (-1);
